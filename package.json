@@ -1,0 +1,44 @@
+{
+  "name": "three-post-processing",
+  "version": "1.0.0",
+  "description": "Easy Post Processing on three.js",
+  "main": "build/three-post-processing.js",
+  "scripts": {
+    "dev": "webpack-dev-server --watch-content-base --config webpack-dev.config.js",
+    "build": "babel ./src/index.js --out-file ./build/three-post-processing.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ukonpower/three-post-processing.git"
+  },
+  "keywords": [
+    "threejs",
+    "webgl",
+    "postprocessing"
+  ],
+  "files": [
+    "build",
+    "src",
+    "types"
+  ],
+  "author": "ukonpower",
+  "bugs": {
+    "url": "https://github.com/ukonpower/three-post-processing/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "shader-loader": "^1.3.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "three": "^0.104.0"
+  }
+}
