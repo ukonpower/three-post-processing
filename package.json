@@ -1,7 +1,7 @@
 {
   "name": "three-post-processing",
   "version": "1.0.0",
-  "description": "Easy Post Processing on three.js",
+  "description": "Simple PostProcessing on three.js",
   "main": "build/three-post-processing.js",
   "scripts": {
     "dev": "webpack-dev-server --watch-content-base --config webpack-dev.config.js",
@@ -13,13 +13,11 @@
   },
   "keywords": [
     "threejs",
-    "webgl",
-    "postprocessing"
+    "webgl"
   ],
   "files": [
     "build",
-    "src",
-    "types"
+    "src"
   ],
   "author": "ukonpower",
   "bugs": {
