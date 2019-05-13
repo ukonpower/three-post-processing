@@ -23,7 +23,7 @@ function () {
     parameter.forEach(function (param, i) {
       var mat = new THREE.ShaderMaterial({
         uniforms: param.uniforms,
-        vertexShader: "varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 ); } ",
+        vertexShader: "varying vec2 vUv; void main() { vUv = uv; gl_Position = vec4( position, 1.0 ); } ",
         fragmentShader: param.fragmentShader
       });
       param.uniforms.backbuffer = {
