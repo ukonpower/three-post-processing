@@ -30,7 +30,6 @@ export default class TPP {
         let size = new THREE.Vector2();
         this.renderer.getSize(size);
         size.multiplyScalar(this.renderer.getPixelRatio());
-        console.log(this.renderer)
         this.readBuffer = new THREE.WebGLRenderTarget(size.x,size.y);
         this.writeBuffer = new THREE.WebGLRenderTarget(size.x,size.y);
     }
